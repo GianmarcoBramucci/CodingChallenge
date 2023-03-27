@@ -1,0 +1,84 @@
+/* setup generale dei contenitori dello sfondo */
+*{
+    box-sizing: border-box;
+    margin: 0;    
+}
+
+body{
+   background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* set up box (molto più complcata del previsto ma era la soluzione più precisa) */
+body>div{
+    position: absolute;
+    top: 51%;
+    left: 51%;
+    transform: translate(-50%, -50%) translateY(-10px);
+    width: 1200px;
+    height: 855px;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 70px;
+}
+/* set up del font */
+header,main{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* set up header */
+header>h1{
+    color: limegreen;
+    font-weight: bold;
+}
+
+img[src="logo.png"]{
+    height: 100px;
+    width: auto;
+}
+header, nav{
+    text-align: center;
+}
+
+/* set up finta barra di navigazione */
+nav{
+    height: 50px;
+    background-color: limegreen;
+    margin-top: 5px;
+    padding-top:15px;
+}
+
+/* set up main */
+main>section{
+    color: white;
+    margin-top: 20px;
+}
+
+main h2{
+    display: inline-block;
+}
+
+/* bb sta per barra batteria */
+.bbpiena{
+        margin-top: 2px;
+        height: 25px;
+        width: 60%;
+        background-color: rgb(57, 222, 12);
+        border-radius: 5px;
+    }
+.bbmetà{
+        height: 25px;
+        width: 30%;
+        background-color: orange;
+        border-radius: 5px;
+        margin-top: 2px;
+    }
+.bbbassa{
+        height: 25px;
+        width: 15%;
+        background-color: red;
+        border-radius: 5px;
+        margin-top: 2px;
+    }
